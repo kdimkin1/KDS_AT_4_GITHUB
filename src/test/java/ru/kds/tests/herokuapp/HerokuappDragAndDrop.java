@@ -40,8 +40,8 @@ public class HerokuappDragAndDrop {
     //Проверьте, что прямоугольники действительно поменялись
         $("#column-a > header").shouldHave(text("B"));
         //добавим скриншот
-        // build/reports/tests/checkDragAndDrop.png
-        String checkJunit5Example = screenshot("checkDragAndDrop");
+        // build/reports/tests/checkHerokuappDragAndDrop.png
+        String herokuappDragAndDropExample = screenshot("checkHerokuappDragAndDrop");
 
     }
 }
