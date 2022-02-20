@@ -98,6 +98,12 @@ public class SelenideSnippets {
 
         // complex actions with keybord and mouse, example
         actions().moveToElement($("div")).clickAndHold().moveByOffset(300, 200).release().perform();
+        //more examples
+        actions().moveToElement($("#draggable")).clickAndHold().moveToElement($("#droppable")).release().perform();
+        actions().moveToElement($("#draggable")).clickAndHold().moveByOffset(150, 30).release().perform();
+        actions().clickAndHold($("#draggable")).moveToElement($("#droppable")).release().perform();
+        $("#draggable").dragAndDropTo("#droppable");
+
 
         // old html actions don't work with many modern frameworks
         $("").selectOption("dropdown_option");
